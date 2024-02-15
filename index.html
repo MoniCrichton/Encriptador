@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="titulo">Encriptador Español</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <div>
+                <img class="logo-alura" src="./img/logo-alura.png" alt="Logo de alura, letra a imprenta minúscula">
+            </div>
+            <div class="titulo">
+                <h1 data-i18n="titulo">Cahllenge Encriptador</h1>
+            </div>   
+        </div>
+        <nav>
+            <ul class="menu-idiomas">
+                <li><a href="javascript:void(0);" onclick="cambiarIdioma('spanish')">Español</a></li>
+                <li><a href="javascript:void(0);" onclick="cambiarIdioma('english')">English</a></li>
+                <li><a href="javascript:void(0);" onclick="cambiarIdioma('portuguese')">Português</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <section class="contenedor">
+        <div class="contenedor-caja">
+            <div class="caja-con-botones">
+                <div>
+                    <textarea name="caja-encriptador" id="caja-encriptador" cols="30" rows="10" data-placeholder="placeholderEncriptar"></textarea>
+                    <div class="botones">
+                        <button class="btn-encriptador" onclick="encriptarTexto()" data-i18n="encriptar">Encriptar</button>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn-borrar" onclick="borrarContenido('caja-encriptador')" data-i18n="borrar">Borrar</button>
+                        <button class="btn-copiar" onclick="copiarResultado('caja-encriptador')" data-i18n="copiar">Copiar</button>
+                    </div>
+                </div>
+            </div>
+            <span><img src="./img/stock-vector-abstract-green-blue-wave-light-effect-in-perspective-vector-illustration-magic-luminous-azure-glow-2187372715.jpg" alt="onda en colores"></span>
+            <div class="caja-con-botones">
+                <div>                
+                    <textarea name="caja-desencriptador" id="caja-desencriptador" cols="30" rows="10" data-placeholder="placeholderDesencriptar"></textarea>
+                    <div class="botones">
+                        <button class="btn-desencriptador" onclick="desencriptarTexto()" data-i18n="desencriptar" data-i18n="placeholderDesencriptar">Desencriptar</button>
+                    </div>
+                    <div class="btn-container" >
+                        <button class="btn-borrar" onclick="borrarContenido('caja-desencriptador')" data-i18n="borrar">Borrar</button>
+                        <button class="btn-copiar" onclick="copiarResultado('caja-desencriptador')" data-i18n="copiar">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; Copyright Monica Crichton</p>
+    <p>Desafío ALURA LATAM - ORACLE ONE Generation 6 - 2024</p>
+</footer>
+
+    <script src="./encriptado.js"></script>
+    <script src="./Idiomas.js"></script>
+</body>
+</html>

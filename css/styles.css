@@ -1,0 +1,220 @@
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    background-color: #687;
+    padding: 15px 20px;
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.caja, .logo-alura {
+    display: flex;
+    align-items: center;
+}
+
+.logo-alura {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.titulo {
+    font-size: 44px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #1E352B;
+    text-decoration: underline;
+} 
+
+main {
+    background: linear-gradient(to bottom, #4CAF50 0%,  #497e76 50%);
+    /* Otras propiedades de estilo para el elemento main si las tienes */
+       margin-top: 0; /* Elimina el margen superior */
+        margin-bottom: 0; /* Elimina el margen inferior */
+        margin-left: 10px; /* Mantén el margen izquierdo */
+        margin-right: 10px; /* Mantén el margen derecho */
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0; /* Elimina el margen superior */
+        margin-bottom: 0; /* Elimina el margen inferior */
+        margin-left: 10px; /* Mantén el margen izquierdo */
+        margin-right: 10px;
+}
+
+.contenedor-caja, .caja-encriptador, .caja-desencriptador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contenedor-caja > div, .caja-encriptador, .caja-desencriptador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-caja > div button {
+    margin-left: 10px;
+}
+
+.contenedor-caja span {
+    /* font-size: 13px; */
+    /* position: absolute;
+    top: 50%;
+    transform: translateY(50%); */
+    margin: 0 10px; 
+    transition: transform 0.3s ease;
+}
+
+.contenedor-caja span img {
+    max-width: 100px;
+    max-height: 100px;
+    /* margin-bottom: 180px; */
+}
+
+@keyframes wave {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.contenedor-caja span:hover, .contenedor-caja span:active {
+    animation: wave 0.5s ease-in-out infinite;
+}
+
+.caja-encriptador, .caja-desencriptador {
+    width: calc(100% - 120px);
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    color: green;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.caja-encriptador:focus, .caja-desencriptador:focus {
+    outline: 2px solid #4CAF50; 
+}
+
+.caja-con-botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.caja-con-botones > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.caja-con-botones > div textarea {
+    margin-bottom: 10px;
+    outline: 2px solid #4CAF50; 
+    font-size: 20px !important;
+}
+
+.botones, .btn-borrar, .btn-copiar {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.botones button, .btn-borrar, .btn-copiar {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botones button:hover, .btn-borrar:hover, .btn-copiar:hover {
+    background-color: #45a049;
+}
+
+.botones button:active, .btn-borrar:active, .btn-copiar:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+footer {
+    margin: 10px;
+    margin-top: 0;
+}
+
+footer p {
+    padding: 10px;
+    text-align: center;
+    background-color: #42857b;
+    font-weight: bold
+}
+
+@media only screen and (max-width: 600px) {
+    .contenedor-caja span {
+        font-size: 100px;
+    }
+    
+    .caja-encriptador, .caja-desencriptador {
+        margin: 0;
+    }
+
+    .caja-con-botones > div textarea {
+        font-size: 10px;
+    }
+}
