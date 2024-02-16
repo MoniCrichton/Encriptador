@@ -6,13 +6,13 @@ body {
 }
 
 html, body {
-    height: 100%;
+    height: 200%;
 }
 
 header {
     background-color: #687;
     padding: 15px 20px;
-    margin: 0 10px;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -68,10 +68,7 @@ nav a:hover {
 main {
     background: linear-gradient(to bottom, #4CAF50 0%,  #497e76 50%);
     /* Otras propiedades de estilo para el elemento main si las tienes */
-       margin-top: 0; /* Elimina el margen superior */
-        margin-bottom: 0; /* Elimina el margen inferior */
-        margin-left: 10px; /* Mantén el margen izquierdo */
-        margin-right: 10px; /* Mantén el margen derecho */
+       margin: 0;; /* Mantén el margen derecho */
 }
 
 .contenedor {
@@ -194,8 +191,7 @@ main {
 }
 
 footer {
-    margin: 10px;
-    margin-top: 0;
+    margin: 0;
 }
 
 footer p {
