@@ -13,7 +13,6 @@ function encriptarTexto() {
                                        .replace(/u/g, 'ufat');
     document.getElementById('caja-desencriptador').value = textoEncriptado;
 }
-
 function desencriptarTexto() {
     let textoEncriptado = document.getElementById('caja-desencriptador').value;
     
@@ -22,24 +21,23 @@ function desencriptarTexto() {
         return;
     }
     
-    let textoOriginal = textoEncriptado.replace(/enter/g, 'e')
-                                       .replace(/imes/g, 'i')
-                                       .replace(/ai/g, 'a')
-                                       .replace(/ober/g, 'o')
-                                       .replace(/ufat/g, 'u');
-    
-    // Ahora, podemos hacer un reemplazo adicional para asegurarnos de que cualquier texto encriptado
-    // que se encuentre después de una letra no se convierta en la letra misma.
-    textoOriginal = textoOriginal.replace(/aimes/g, 'a')
-                                 .replace(/oimes/g, 'o')
-                                 .replace(/eimes/g, 'e')
-                                 .replace(/uimes/g, 'u')
-                                 .replace(/aienter/g, 'ai')
-                                 .replace(/oienter/g, 'oi')
-                                 .replace(/eenter/g, 'ee')
-                                 .replace(/uenter/g, 'u');
+    let textoOriginal = textoEncriptado
+        // .replace(/enter/g, 'e')
+        // .replace(/imes/g, 'i')
+        // .replace(/ai/g, 'a')
+        // .replace(/ober/g, 'o')
+        // .replace(/ufat/g, 'u')
+        .replace(/ai/g, 'a')
+        .replace(/ober/g, 'o')
+        .replace(/enter/g, 'e')
+        .replace(/ufat/g, 'u')
+        .replace(/imes/g, 'i');
+
+
     document.getElementById('caja-encriptador').value = textoOriginal;
 }
+
+
 
 function copiarResultado(idCaja) {
     let textoResultado = document.getElementById(idCaja).value;
