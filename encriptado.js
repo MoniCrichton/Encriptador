@@ -1,5 +1,5 @@
 function encriptarTexto() {
-    let textoOriginal = document.getElementById('caja-encriptador').value.toLowerCase();
+    let textoOriginal = document.getElementById('caja-encriptador').value;
     
     if (!validarTexto(textoOriginal)) {
         mostrarError();
@@ -15,7 +15,7 @@ function encriptarTexto() {
 }
 
 function desencriptarTexto() {
-    let textoEncriptado = document.getElementById('caja-desencriptador').value.toLowerCase();
+    let textoEncriptado = document.getElementById('caja-desencriptador').value;
     
     if (!validarTexto(textoEncriptado)) {
         mostrarError();
@@ -27,6 +27,17 @@ function desencriptarTexto() {
                                        .replace(/ai/g, 'a')
                                        .replace(/ober/g, 'o')
                                        .replace(/ufat/g, 'u');
+    
+    // Ahora, podemos hacer un reemplazo adicional para asegurarnos de que cualquier texto encriptado
+    // que se encuentre después de una letra no se convierta en la letra misma.
+    textoOriginal = textoOriginal.replace(/aimes/g, 'a')
+                                 .replace(/oimes/g, 'o')
+                                 .replace(/eimes/g, 'e')
+                                 .replace(/uimes/g, 'u')
+                                 .replace(/aienter/g, 'ai')
+                                 .replace(/oienter/g, 'oi')
+                                 .replace(/eenter/g, 'ee')
+                                 .replace(/uenter/g, 'u');
     document.getElementById('caja-encriptador').value = textoOriginal;
 }
 
