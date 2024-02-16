@@ -34,8 +34,21 @@ const translations = {
         placeholderDesencriptar: 'Digite o texto a ser descriptografado',
         textoCopiado: 'Texto copiado',
         textoDesencriptado: 'O texto descriptografado foi copiado para a área de transferência'
-    }
+    },
+    chinese: {
+        encriptar: '加密',
+        desencriptar: '解密',
+        copiar: '复制',
+        borrar: '清空',
+        copiadoExito: '已加密文本已复制到剪贴板',
+        titulo: '加密器挑战',
+        placeholderEncriptar: '输入要加密的文本',
+        placeholderDesencriptar: '输入要解密的文本',
+        textoCopiado: '文本已复制',
+        textoDesencriptado: '解密文本已复制到剪贴板'
+    },
 };
+
 
 function cambiarIdioma(idioma) {
     const traducciones = translations[idioma];
