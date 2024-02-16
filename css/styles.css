@@ -205,6 +205,18 @@ footer p {
     font-weight: bold
 }
 
+.nombre {
+    font-weight: bold;
+    color: #333; /* Cambia el color según tu preferencia */
+}
+
+.enlaces-footer a {
+    margin-left: 10px; /* Añade un margen entre los enlaces */
+    text-decoration: none; /* Quita la subrayado predeterminado de los enlaces */
+    color: #666; /* Cambia el color de los enlaces según tu preferencia */
+}
+
+
 @media only screen and (max-width: 600px) {
     .contenedor-caja span {
         font-size: 100px;
