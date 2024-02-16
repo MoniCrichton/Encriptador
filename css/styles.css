@@ -212,7 +212,19 @@ footer p {
 .enlaces-footer a {
     margin-left: 10px; /* Añade un margen entre los enlaces */
     text-decoration: none; /* Quita la subrayado predeterminado de los enlaces */
-    color: #666; /* Cambia el color de los enlaces según tu preferencia */
+    color: #333; /* Cambia el color de los enlaces según tu preferencia */
+    border: 2px solid #1E352B; /* Añade un borde de color gris */
+    border-radius: 5px; /* Añade bordes redondeados */
+    padding: 5px; /* Añade espacio alrededor del icono */
+    transition: border-color 0.3s ease; /* Agrega una transición suave para el color del borde */
+}
+
+.enlaces-footer a:hover {
+    border-color: #666; /* Cambia el color del borde al pasar el ratón sobre el enlace */
+}
+
+.enlaces-footer a:hover i {
+    color: #666; /* Cambia el color del icono al pasar el ratón sobre el enlace */
 }
 
 
