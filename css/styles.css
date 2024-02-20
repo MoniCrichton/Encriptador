@@ -6,18 +6,19 @@ body {
 }
 
 html, body {
-    height: 100%;
+    height: 100vh;
 }
 
 header {
     background-color: #687;
-    padding: 15px 20px;
+    padding: 1rem 1.25rem;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0;
+    height: 10%;
 }
 
 .caja, .logo-alura {
@@ -26,19 +27,19 @@ header {
 }
 
 .logo-alura {
-    width: 50px;
-    margin-right: 10px;
+    width: 30px;
+    margin-right: 0.625rem;
 }
 
 .titulo {
-    font-size: 44px;
+    font-size: 1.25rem;
     margin: 0;
     text-align: center;
     font-weight: bold;
 }
 
 nav {
-    margin-top: 10px;
+    margin-top: .625rem;
 }
 
 nav ul {
@@ -49,14 +50,14 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 10px;
+    margin-right: .625rem;
 }
 
 nav a {
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 0.75rem;
     text-decoration: none;
 }
 
@@ -69,15 +70,13 @@ main {
     background: linear-gradient(to bottom, #4CAF50 0%,  #497e76 50%);
     /* Otras propiedades de estilo para el elemento main si las tienes */
        margin: 0;; /* Mantén el margen derecho */
+       height: 75%;
 }
 
 .contenedor {
     display: flex;
     justify-content: space-around;
-    margin-top: 0; /* Elimina el margen superior */
-        margin-bottom: 0; /* Elimina el margen inferior */
-        margin-left: 10px; /* Mantén el margen izquierdo */
-        margin-right: 10px;
+    margin: 0 0.625rem;
 }
 
 .contenedor-caja, .caja-encriptador, .caja-desencriptador {
@@ -85,19 +84,19 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
 }
 
 .contenedor-caja > div, .caja-encriptador, .caja-desencriptador {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .contenedor-caja > div button {
-    margin-left: 10px;
+    margin-left: 0.625rem;
 }
 
 .contenedor-caja span {
@@ -105,7 +104,7 @@ main {
     /* position: absolute;
     top: 50%;
     transform: translateY(50%); */
-    margin: 0 10px; 
+    margin: 0 0.625rem; 
     transition: transform 0.3s ease;
 }
 
@@ -126,14 +125,14 @@ main {
 }
 
 .caja-encriptador, .caja-desencriptador {
-    width: calc(100% - 120px);
-    margin: 0 5px;
+    width: calc(100% - 7.5rem);
+    margin: 0 0.3125rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: #f9f9f9;
     color: green;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
 .caja-encriptador:focus, .caja-desencriptador:focus {
@@ -144,7 +143,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .caja-con-botones > div {
@@ -156,23 +155,23 @@ main {
 .btn-container {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 
 .caja-con-botones > div textarea {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     outline: 2px solid #4CAF50; 
-    font-size: 20px !important;
+    font-size: 1.25rem;
 }
 
 .botones, .btn-borrar, .btn-copiar {
     text-align: center;
-    margin: 10px 0;
+    margin: 0.625rem 0;
 }
 
 .botones button, .btn-borrar, .btn-copiar {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border-radius: 5px;
     background-color: #4CAF50;
     color: white;
@@ -186,16 +185,17 @@ main {
 }
 
 .botones button:active, .btn-borrar:active, .btn-copiar:active {
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    box-shadow: 0 0.3125rem #666;
+    transform: translateY(0.25rem);
 }
 
 footer {
     margin: 0;
+    height: 10%;
 }
 
 footer p {
-    padding: 10px;
+    padding: 0.625rem;
     text-align: center;
     background-color: #1f5850;
     font-weight: bold
@@ -206,12 +206,12 @@ footer p {
     }
 
 .enlaces-footer a {
-    margin-left: 10px; /* Añade un margen entre los enlaces */
+    margin-left: 0.625rem; /* Añade un margen entre los enlaces */
     text-decoration: none; /* Quita la subrayado predeterminado de los enlaces */
     color: #333; /* Cambia el color de los enlaces según tu preferencia */
     border: 2px solid #1E352B; /* Añade un borde de color gris */
     border-radius: 5px; /* Añade bordes redondeados */
-    padding: 5px; /* Añade espacio alrededor del icono */
+    padding: 0.3125rem; /* Añade espacio alrededor del icono */
     transition: border-color 0.3s ease; /* Agrega una transición suave para el color del borde */
 }
 
@@ -226,7 +226,7 @@ footer p {
 
 @media only screen and (max-width: 600px) {
     .contenedor-caja span {
-        font-size: 100px;
+        font-size: 6.25rem;
     }
     
     .caja-encriptador, .caja-desencriptador {
@@ -234,6 +234,6 @@ footer p {
     }
 
     .caja-con-botones > div textarea {
-        font-size: 10px;
+        font-size: .625rem;
     }
 }

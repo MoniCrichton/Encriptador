@@ -1,3 +1,4 @@
+
 function encriptarTexto() {
     let textoOriginal = document.getElementById('caja-encriptador').value;
     
@@ -22,11 +23,7 @@ function desencriptarTexto() {
     }
     
     let textoOriginal = textoEncriptado
-        // .replace(/enter/g, 'e')
-        // .replace(/imes/g, 'i')
-        // .replace(/ai/g, 'a')
-        // .replace(/ober/g, 'o')
-        // .replace(/ufat/g, 'u')
+        
         .replace(/ai/g, 'a')
         .replace(/ober/g, 'o')
         .replace(/enter/g, 'e')
