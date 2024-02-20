@@ -18,7 +18,7 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0;
-    height: 10%;
+    height: 10vh;
 }
 
 .caja, .logo-alura {
@@ -32,7 +32,7 @@ header {
 }
 
 .titulo {
-    font-size: 1.25rem;
+    font-size: 3.5rem;
     margin: 0;
     text-align: center;
     font-weight: bold;
@@ -57,7 +57,7 @@ nav a {
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
-    font-size: 0.75rem;
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -69,8 +69,11 @@ nav a:hover {
 main {
     background: linear-gradient(to bottom, #4CAF50 0%,  #497e76 50%);
     /* Otras propiedades de estilo para el elemento main si las tienes */
-       margin: 0;; /* Mantén el margen derecho */
-       height: 75%;
+        margin: 0;; /* Mantén el margen derecho */
+        height: 76.7vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 .contenedor {
@@ -110,7 +113,7 @@ main {
 
 .contenedor-caja span img {
     max-width: 100px;
-    max-height: 100px;
+    max-height:100px;
     /* margin-bottom: 180px; */
 }
 
@@ -191,7 +194,7 @@ main {
 
 footer {
     margin: 0;
-    height: 10%;
+    height: 10dvh;
 }
 
 footer p {
